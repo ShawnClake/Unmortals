@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Objects">
+      <UniqueIdentifier>{1f2a638c-0e26-4491-9fe7-d8d4f6ade027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers">
+      <UniqueIdentifier>{b9a13b12-0581-4133-aea0-5c6453c9a7df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Processing">
+      <UniqueIdentifier>{f31a59e0-5db4-4385-9e6f-e29441dc4399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Processing\Objects">
+      <UniqueIdentifier>{1d74ac20-ddb6-4ae6-b2f3-174206e7d92a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Boundings">
+      <UniqueIdentifier>{2dcd6167-1817-4e02-a03c-088821a034e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Types">
+      <UniqueIdentifier>{44df87f7-d8df-49b0-992d-ff55d5d327ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic">
+      <UniqueIdentifier>{3d40b66b-fb5c-4337-a3bf-e2853ab93156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic\GameLogic">
+      <UniqueIdentifier>{b1d79c3c-7c88-4264-9e19-77c0356b534f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic\Object Logic">
+      <UniqueIdentifier>{7e50363d-4b5f-4dc7-be82-5c338906957d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Instances">
+      <UniqueIdentifier>{7732132c-b1aa-4da7-8c96-b310cd990325}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="start.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mathConsts.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="physics.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="framerate.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="textureLoader.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="windowConsts.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Models.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle.h">
+      <Filter>Source Files\Objects\Boundings</Filter>
+    </ClInclude>
+    <ClInclude Include="Boundings.h">
+      <Filter>Source Files\Objects\Boundings</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Source Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Source Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Wheel.h">
+      <Filter>Source Files\Objects\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Gravity.h">
+      <Filter>Source Files\Processing\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Friction.h">
+      <Filter>Source Files\Processing\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxSpeed.h">
+      <Filter>Source Files\Processing\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Generic.h">
+      <Filter>Source Files\Objects\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Source Files\Logic\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw.h">
+      <Filter>Source Files\Logic\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureHandler.h">
+      <Filter>Source Files\Logic\Object Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame.h">
+      <Filter>Source Files\Logic\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>Source Files\Logic\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Prop.h">
+      <Filter>Source Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Source Files\Objects\Instances</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatingPlatform.h">
+      <Filter>Source Files\Objects\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Source Files\Objects\Boundings</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformA.h">
+      <Filter>Source Files\Objects\Instances</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
