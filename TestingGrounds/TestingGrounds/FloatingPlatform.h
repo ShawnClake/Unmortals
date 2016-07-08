@@ -6,15 +6,15 @@
 
 namespace sth {
 
-	class FloatingPlatform : public Generic, public Rectangle {
-
-		void initModel(const dimensions & dimensions, Models& model) {
+	class FloatingPlatform : public Rectangle, public Generic {
+	public:
+		void initModel(const dimensions & dims, Models& model) {
 
 			model.rect = new sf::RectangleShape();
 
-			model.rect->setSize(sf::Vector2f(dimensions.x, dimensions.y));
-			model.rect->setOrigin(dimensions.x / 2, dimensions.y / 2);
-			model.rect->setPosition(WindowConsts::mainGameW / 1.4, WindowConsts::mainGameH - dimensions.y);
+			model.rect->setSize(sf::Vector2f(dims.x, dims.y));
+			model.rect->setOrigin(dims.x / 2, dims.y / 2);
+			model.rect->setPosition( 100, 100 );
 
 		}
 

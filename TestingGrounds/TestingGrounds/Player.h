@@ -41,7 +41,7 @@ namespace sth {
 			canMove = true;
 			hasMaxspeed = true;
 
-			initModel(radius, model);
+			initModel(dimensions, model);
 
 			initTexture("rock1.jpg", textureHandler, model);
 

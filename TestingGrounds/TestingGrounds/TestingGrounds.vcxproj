@@ -126,11 +126,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="start.cpp" />
+    <ClCompile Include="TestDriverA.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Boundings.h" />
     <ClInclude Include="Circle.h" />
+    <ClInclude Include="Colliding.h" />
+    <ClInclude Include="Collision.h" />
     <ClInclude Include="Draw.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="FloatingPlatform.h" />

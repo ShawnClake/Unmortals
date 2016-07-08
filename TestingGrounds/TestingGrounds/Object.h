@@ -6,10 +6,27 @@
 
 namespace sth {
 
+	struct xyzfVector {
+
+		float x = 0;
+		float y = 0;
+		float z = 0;
+
+	};
+
 	struct xyfVector {
 
 		float x = 0;
 		float y = 0;
+
+		xyfVector() {}
+
+		xyfVector(float x, float y) {
+
+			this->x = x;
+			this->y = y;
+
+		}
 
 	};
 

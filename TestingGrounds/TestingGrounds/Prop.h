@@ -9,10 +9,10 @@
 namespace sth {
 
 	class Prop : public Object {
-
+	public:
 		void move(Object* e, Framerate& fr) {
 
-			std::cout << "PROP CLASS" << std::endl;
+			//std::cout << "PROP CLASS" << std::endl;
 
 		}
 
@@ -36,6 +36,12 @@ namespace sth {
 
 			if (canMove)
 				move(this, fr);
+
+		}
+
+		bool isInteractive() {
+
+			return false;
 
 		}
 

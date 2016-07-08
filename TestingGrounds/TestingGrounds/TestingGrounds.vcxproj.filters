@@ -45,7 +45,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="start.cpp">
+    <ClCompile Include="TestDriverA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -127,6 +127,12 @@
     </ClInclude>
     <ClInclude Include="PlatformA.h">
       <Filter>Source Files\Objects\Instances</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Source Files\Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="Colliding.h">
+      <Filter>Source Files\Processing</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

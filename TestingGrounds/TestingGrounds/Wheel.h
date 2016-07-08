@@ -9,13 +9,13 @@ namespace sth {
 	class Wheel : public Circle, public Generic {
 	public:
 
-		void initModel(const float radius, Models& model) {
+		void initModel(const dimensions & dims, Models& model) {
 
 			model.circle = new sf::CircleShape();
 
-			model.circle->setRadius(radius);
-			model.circle->setOrigin(radius, radius);
-			model.circle->setPosition(WindowConsts::mainGameW / 2, WindowConsts::mainGameH - radius);
+			model.circle->setRadius(dims.r);
+			model.circle->setOrigin(dims.r, dims.r);
+			model.circle->setPosition(WindowConsts::mainGameW / 2, WindowConsts::mainGameH - dims.r);
 
 		}
 

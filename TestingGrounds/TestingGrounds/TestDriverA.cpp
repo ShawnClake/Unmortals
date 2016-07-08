@@ -4,6 +4,7 @@
 #include "Player.h"
 #include "Thread.h"
 #include "PlatformA.h"
+#include "Collision.h"
 
 float operator*=(float& lhs, sth::Framerate& fr) {
 
@@ -19,30 +20,17 @@ int main() {
 	sf::RenderWindow* window = sth::Thread::windowCreator(sf::Vector2i(sth::WindowConsts::mainGameW, sth::WindowConsts::mainGameH), settings);
 	sth::Game game;
 
-	sth::Object *player = new sth::Player(game.textureHandler, 10.f);
-
 	sth::Object *platform1 = new sth::PlatformA(game.textureHandler, 50.f, 10.f);
 
-	game.objects.push_back(player);
-	game.objects.push_back(platform1);
+	sth::Collision detection;
 
-	return sth::Thread::GameLoop(game, *window);
+	if (detection.pointInRectangle(sth::xyfVector(124.f, 104.f), platform1))
+		std::cout << "INSIDE" << std::endl;
+	else
+		std::cout << "OUTSIDE" << std::endl;
 
-	/*sth::Framerate fr;
-	float cheese = 60.f;
+	char temp;
 
-	fr.lap();
-
-	for (int i = 0; i < 1000; i++) {
-		std::cout << fr * cheese << std::endl;
-		fr.lap();
-	}
-
-	//char keepOpen = ' ';
-
-	//sth::Object *player = new sth::Player();
-
-	//std::cin >> keepOpen;*/
-
+	std::cin >> temp;
 	return 0;
 }
